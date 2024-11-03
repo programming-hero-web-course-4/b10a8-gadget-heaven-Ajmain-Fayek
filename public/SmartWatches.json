@@ -1,0 +1,162 @@
+[
+    {
+        "product_id": "SW001",
+        "product_title": "Apple Watch Series 7",
+        "product_image": "https://example.com/apple_watch_series_7.jpg",
+        "category": "Smart Watch",
+        "price": 399,
+        "description": "Apple Watch Series 7 with always-on Retina display, ECG app, and blood oxygen sensor.",
+        "specification": [
+            "Always-on Retina display",
+            "ECG app",
+            "Blood oxygen sensor",
+            "Water-resistant"
+        ],
+        "availability": "In Stock",
+        "rating": 4.8
+    },
+    {
+        "product_id": "SW002",
+        "product_title": "Samsung Galaxy Watch 4",
+        "product_image": "https://example.com/galaxy_watch_4.jpg",
+        "category": "Smart Watch",
+        "price": 249,
+        "description": "Samsung Galaxy Watch 4 with Wear OS, body composition analysis, and sleep tracking.",
+        "specification": [
+            "Wear OS",
+            "Body composition analysis",
+            "Sleep tracking",
+            "Water-resistant"
+        ],
+        "availability": "In Stock",
+        "rating": 4.7
+    },
+    {
+        "product_id": "SW003",
+        "product_title": "Fitbit Sense",
+        "product_image": "https://example.com/fitbit_sense.jpg",
+        "category": "Smart Watch",
+        "price": 299,
+        "description": "Fitbit Sense with stress management tools, ECG app, and skin temperature sensor.",
+        "specification": [
+            "Stress management tools",
+            "ECG app",
+            "Skin temperature sensor",
+            "Water-resistant"
+        ],
+        "availability": "In Stock",
+        "rating": 4.6
+    },
+    {
+        "product_id": "SW004",
+        "product_title": "Garmin Forerunner 945",
+        "product_image": "https://example.com/forerunner_945.jpg",
+        "category": "Smart Watch",
+        "price": 599,
+        "description": "Garmin Forerunner 945 with advanced training features, maps, and music storage.",
+        "specification": [
+            "Advanced training features",
+            "Maps",
+            "Music storage",
+            "Water-resistant"
+        ],
+        "availability": "In Stock",
+        "rating": 4.9
+    },
+    {
+        "product_id": "SW005",
+        "product_title": "Fossil Gen 6",
+        "product_image": "https://example.com/fossil_gen_6.jpg",
+        "category": "Smart Watch",
+        "price": 299,
+        "description": "Fossil Gen 6 with Wear OS, SpO2 sensor, and fast charging.",
+        "specification": [
+            "Wear OS",
+            "SpO2 sensor",
+            "Fast charging",
+            "Water-resistant"
+        ],
+        "availability": "In Stock",
+        "rating": 4.5
+    },
+    {
+        "product_id": "SW006",
+        "product_title": "TicWatch Pro 3",
+        "product_image": "https://example.com/ticwatch_pro_3.jpg",
+        "category": "Smart Watch",
+        "price": 299,
+        "description": "TicWatch Pro 3 with dual-display technology, long battery life, and Wear OS.",
+        "specification": [
+            "Dual-display technology",
+            "Long battery life",
+            "Wear OS",
+            "Water-resistant"
+        ],
+        "availability": "In Stock",
+        "rating": 4.6
+    },
+    {
+        "product_id": "SW007",
+        "product_title": "Amazfit GTS 2",
+        "product_image": "https://example.com/amazfit_gts_2.jpg",
+        "category": "Smart Watch",
+        "price": 179,
+        "description": "Amazfit GTS 2 with AMOLED display, SpO2 sensor, and music storage.",
+        "specification": [
+            "AMOLED display",
+            "SpO2 sensor",
+            "Music storage",
+            "Water-resistant"
+        ],
+        "availability": "In Stock",
+        "rating": 4.5
+    },
+    {
+        "product_id": "SW008",
+        "product_title": "Huawei Watch GT 3",
+        "product_image": "https://example.com/huawei_watch_gt_3.jpg",
+        "category": "Smart Watch",
+        "price": 249,
+        "description": "Huawei Watch GT 3 with HarmonyOS, long battery life, and SpO2 sensor.",
+        "specification": [
+            "HarmonyOS",
+            "Long battery life",
+            "SpO2 sensor",
+            "Water-resistant"
+        ],
+        "availability": "In Stock",
+        "rating": 4.7
+    },
+    {
+        "product_id": "SW009",
+        "product_title": "Withings Steel HR",
+        "product_image": "https://example.com/withings_steel_hr.jpg",
+        "category": "Smart Watch",
+        "price": 199,
+        "description": "Withings Steel HR with heart rate monitoring, sleep tracking, and long battery life.",
+        "specification": [
+            "Heart rate monitoring",
+            "Sleep tracking",
+            "Long battery life",
+            "Water-resistant"
+        ],
+        "availability": "In Stock",
+        "rating": 4.4
+    },
+    {
+        "product_id": "SW010",
+        "product_title": "Suunto 7",
+        "product_image": "https://example.com/suunto_7.jpg",
+        "category": "Smart Watch",
+        "price": 399,
+        "description": "Suunto 7 with Wear OS, offline maps, and sports tracking.",
+        "specification": [
+            "Wear OS",
+            "Offline maps",
+            "Sports tracking",
+            "Water-resistant"
+        ],
+        "availability": "In Stock",
+        "rating": 4.6
+    }
+]

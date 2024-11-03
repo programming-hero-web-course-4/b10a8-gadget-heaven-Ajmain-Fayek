@@ -1,0 +1,162 @@
+[
+  {
+    "product_id": "P001",
+    "product_title": "Apple iPhone 13 Pro",
+    "product_image": "https://example.com/iphone_13_pro.jpg",
+    "category": "Phone",
+    "price": 999,
+    "description": "Apple iPhone 13 Pro with A15 Bionic chip, 256GB storage, and triple-camera system.",
+    "specification": [
+      "A15 Bionic chip",
+      "256GB storage",
+      "6.1-inch Super Retina XDR display",
+      "Triple-camera system"
+    ],
+    "availability": "In Stock",
+    "rating": 4.9
+  },
+  {
+    "product_id": "P002",
+    "product_title": "Samsung Galaxy S21 Ultra",
+    "product_image": "https://example.com/galaxy_s21_ultra.jpg",
+    "category": "Phone",
+    "price": 1199,
+    "description": "Samsung Galaxy S21 Ultra with Exynos 2100, 512GB storage, and quad-camera system.",
+    "specification": [
+      "Exynos 2100",
+      "512GB storage",
+      "6.8-inch Dynamic AMOLED 2X display",
+      "Quad-camera system"
+    ],
+    "availability": "In Stock",
+    "rating": 4.8
+  },
+  {
+    "product_id": "P003",
+    "product_title": "Google Pixel 6 Pro",
+    "product_image": "https://example.com/pixel_6_pro.jpg",
+    "category": "Phone",
+    "price": 899,
+    "description": "Google Pixel 6 Pro with Google Tensor chip, 128GB storage, and advanced camera features.",
+    "specification": [
+      "Google Tensor chip",
+      "128GB storage",
+      "6.7-inch LTPO OLED display",
+      "Triple-camera system"
+    ],
+    "availability": "In Stock",
+    "rating": 4.7
+  },
+  {
+    "product_id": "P004",
+    "product_title": "OnePlus 9 Pro",
+    "product_image": "https://example.com/oneplus_9_pro.jpg",
+    "category": "Phone",
+    "price": 969,
+    "description": "OnePlus 9 Pro with Snapdragon 888, 256GB storage, and Hasselblad quad-camera system.",
+    "specification": [
+      "Snapdragon 888",
+      "256GB storage",
+      "6.7-inch Fluid AMOLED display",
+      "Hasselblad quad-camera system"
+    ],
+    "availability": "In Stock",
+    "rating": 4.6
+  },
+  {
+    "product_id": "P005",
+    "product_title": "Sony Xperia 1 III",
+    "product_image": "https://example.com/xperia_1_iii.jpg",
+    "category": "Phone",
+    "price": 1299,
+    "description": "Sony Xperia 1 III with Snapdragon 888, 256GB storage, and 4K HDR OLED display.",
+    "specification": [
+      "Snapdragon 888",
+      "256GB storage",
+      "6.5-inch 4K HDR OLED display",
+      "Triple-camera system"
+    ],
+    "availability": "In Stock",
+    "rating": 4.5
+  },
+  {
+    "product_id": "P006",
+    "product_title": "Xiaomi Mi 11 Ultra",
+    "product_image": "https://example.com/mi_11_ultra.jpg",
+    "category": "Phone",
+    "price": 1099,
+    "description": "Xiaomi Mi 11 Ultra with Snapdragon 888, 256GB storage, and AMOLED display.",
+    "specification": [
+      "Snapdragon 888",
+      "256GB storage",
+      "6.81-inch AMOLED display",
+      "Triple-camera system"
+    ],
+    "availability": "In Stock",
+    "rating": 4.7
+  },
+  {
+    "product_id": "P007",
+    "product_title": "Oppo Find X3 Pro",
+    "product_image": "https://example.com/find_x3_pro.jpg",
+    "category": "Phone",
+    "price": 999,
+    "description": "Oppo Find X3 Pro with Snapdragon 888, 256GB storage, and 120Hz AMOLED display.",
+    "specification": [
+      "Snapdragon 888",
+      "256GB storage",
+      "6.7-inch 120Hz AMOLED display",
+      "Quad-camera system"
+    ],
+    "availability": "In Stock",
+    "rating": 4.6
+  },
+  {
+    "product_id": "P008",
+    "product_title": "Asus ROG Phone 5",
+    "product_image": "https://example.com/rog_phone_5.jpg",
+    "category": "Phone",
+    "price": 899,
+    "description": "Asus ROG Phone 5 with Snapdragon 888, 256GB storage, and 144Hz AMOLED display.",
+    "specification": [
+      "Snapdragon 888",
+      "256GB storage",
+      "6.78-inch 144Hz AMOLED display",
+      "Triple-camera system"
+    ],
+    "availability": "In Stock",
+    "rating": 4.7
+  },
+  {
+    "product_id": "P009",
+    "product_title": "Huawei P50 Pro",
+    "product_image": "https://example.com/p50_pro.jpg",
+    "category": "Phone",
+    "price": 1099,
+    "description": "Huawei P50 Pro with Kirin 9000, 256GB storage, and OLED display.",
+    "specification": [
+      "Kirin 9000",
+      "256GB storage",
+      "6.6-inch OLED display",
+      "Quad-camera system"
+    ],
+    "availability": "In Stock",
+    "rating": 4.8
+  },
+  {
+    "product_id": "P010",
+    "product_title": "Motorola Edge 20 Pro",
+    "product_image": "https://example.com/edge_20_pro.jpg",
+    "category": "Phone",
+    "price": 799,
+    "description": "Motorola Edge 20 Pro with Snapdragon 870, 256GB storage, and 108MP triple-camera system.",
+    "specification": [
+      "Snapdragon 870",
+      "256GB storage",
+      "6.7-inch OLED display",
+      "108MP triple-camera system"
+    ],
+    "availability": "In Stock",
+    "rating": 4.5
+  }
+]

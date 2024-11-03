@@ -1,0 +1,172 @@
+[
+    {
+        "product_id": "I001",
+        "product_title": "iPhone 16",
+        "product_image": "https://www.mobiledokan.co/wp-content/uploads/2023/08/Apple-iPhone-16-Ultramarine-300x300.webp",
+        "category": "iPhone",
+        "price": 799,
+        "description": "iPhone 16 with A18 chip, 48MP Fusion camera, and Apple Intelligence.",
+        "specification": [
+            "A18 chip",
+            "48MP Fusion camera",
+            "Apple Intelligence",
+            "6.1-inch display",
+            "Water and dust resistant"
+        ],
+        "availability": "In Stock",
+        "rating": 4.9
+    },
+    {
+        "product_id": "I002",
+        "product_title": "iPhone 16 Plus",
+        "product_image": "https://www.mobiledokan.co/wp-content/uploads/2023/11/Apple-iPhone-16-Plus-Pink-300x300.webp",
+        "category": "iPhone",
+        "price": 899,
+        "description": "iPhone 16 Plus with A18 chip, 48MP Fusion camera, and Apple Intelligence.",
+        "specification": [
+            "A18 chip",
+            "48MP Fusion camera",
+            "Apple Intelligence",
+            "6.7-inch display",
+            "Water and dust resistant"
+        ],
+        "availability": "In Stock",
+        "rating": 4.9
+    },
+    {
+        "product_id": "I003",
+        "product_title": "iPhone 16 Pro",
+        "product_image": "https://www.mobiledokan.co/wp-content/uploads/2023/08/Apple-iPhone-16-Pro-White-Titanium-300x300.webp",
+        "category": "iPhone",
+        "price": 1099,
+        "description": "iPhone 16 Pro with A18 Pro chip, 48MP Fusion camera, and Apple Intelligence.",
+        "specification": [
+            "A18 Pro chip",
+            "48MP Fusion camera",
+            "Apple Intelligence",
+            "6.1-inch display",
+            "Water and dust resistant"
+        ],
+        "availability": "In Stock",
+        "rating": 4.9
+    },
+    {
+        "product_id": "I004",
+        "product_title": "iPhone 16 Pro Max",
+        "product_image": "https://www.mobiledokan.co/wp-content/uploads/2023/08/Apple-iPhone-16-Pro-Max-Black-Titanium-300x300.webp",
+        "category": "iPhone",
+        "price": 1199,
+        "description": "iPhone 16 Pro Max with A18 Pro chip, 48MP Fusion camera, and Apple Intelligence.",
+        "specification": [
+            "A18 Pro chip",
+            "48MP Fusion camera",
+            "Apple Intelligence",
+            "6.7-inch display",
+            "Water and dust resistant"
+        ],
+        "availability": "In Stock",
+        "rating": 4.9
+    },
+    {
+        "product_id": "I005",
+        "product_title": "iPhone SE (3rd Gen)",
+        "product_image": "https://www.mobiledokan.co/wp-content/uploads/2019/02/Apple-iPhone-8-300x300.jpg",
+        "category": "iPhone",
+        "price": 399,
+        "description": "iPhone SE (3rd Gen) with A15 chip, Retina display, and Touch ID.",
+        "specification": [
+            "A15 chip",
+            "Retina display",
+            "Touch ID",
+            "4.7-inch display",
+            "Water and dust resistant"
+        ],
+        "availability": "In Stock",
+        "rating": 4.7
+    },
+    {
+        "product_id": "I006",
+        "product_title": "iPhone 15",
+        "product_image": "https://www.mobiledokan.co/wp-content/uploads/2020/12/Apple-iPhone-13-Blue-300x300.jpg",
+        "category": "iPhone",
+        "price": 699,
+        "description": "iPhone 15 with A16 chip, Super Retina XDR display, and MagSafe.",
+        "specification": [
+            "A16 chip",
+            "Super Retina XDR display",
+            "MagSafe",
+            "6.1-inch display",
+            "Water and dust resistant"
+        ],
+        "availability": "In Stock",
+        "rating": 4.8
+    },
+    {
+        "product_id": "I007",
+        "product_title": "iPhone 15 Plus",
+        "product_image": "https://www.mobiledokan.co/wp-content/uploads/2021/12/Apple-iPhone-15-Pro-Max-Natural-Titanium-300x300.webp",
+        "category": "iPhone",
+        "price": 799,
+        "description": "iPhone 15 Plus with A16 chip, Super Retina XDR display, and MagSafe.",
+        "specification": [
+            "A16 chip",
+            "Super Retina XDR display",
+            "MagSafe",
+            "6.7-inch display",
+            "Water and dust resistant"
+        ],
+        "availability": "In Stock",
+        "rating": 4.8
+    },
+    {
+        "product_id": "I008",
+        "product_title": "iPhone 14",
+        "product_image": "https://www.mobiledokan.co/wp-content/uploads/2022/09/Apple-iPhone-14-Plus-Purple-300x300.jpg",
+        "category": "iPhone",
+        "price": 599,
+        "description": "iPhone 14 with A15 chip, Super Retina XDR display, and improved battery life.",
+        "specification": [
+            "A15 chip",
+            "Super Retina XDR display",
+            "Improved battery life",
+            "6.1-inch display",
+            "Water and dust resistant"
+        ],
+        "availability": "In Stock",
+        "rating": 4.7
+    },
+    {
+        "product_id": "I009",
+        "product_title": "iPhone 14 Plus",
+        "product_image": "https://www.mobiledokan.co/wp-content/uploads/2022/09/Apple-iPhone-14-Plus-Purple-300x300.jpg",
+        "category": "iPhone",
+        "price": 699,
+        "description": "iPhone 14 Plus with A15 chip, Super Retina XDR display, and improved battery life.",
+        "specification": [
+            "A15 chip",
+            "Super Retina XDR display",
+            "Improved battery life",
+            "6.7-inch display",
+            "Water and dust resistant"
+        ],
+        "availability": "In Stock",
+        "rating": 4.7
+    },
+    {
+        "product_id": "I010",
+        "product_title": "iPhone 13",
+        "product_image": "https://www.mobiledokan.co/wp-content/uploads/2020/12/Apple-iPhone-13-Blue-300x300.jpg",
+        "category": "iPhone",
+        "price": 499,
+        "description": "iPhone 13 with A14 chip, Super Retina XDR display, and Night mode.",
+        "specification": [
+            "A14 chip",
+            "Super Retina XDR display",
+            "Night mode",
+            "6.1-inch display",
+            "Water and dust resistant"
+        ],
+        "availability": "In Stock",
+        "rating": 4.6
+    }
+]

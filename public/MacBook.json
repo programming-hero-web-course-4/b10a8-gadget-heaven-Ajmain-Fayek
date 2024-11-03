@@ -1,0 +1,172 @@
+[
+    {
+        "product_id": "M001",
+        "product_title": "MacBook Pro 14-inch (M3, 2024)",
+        "product_image": "https://www.startech.com.bd/image/cache/catalog/laptop/apple/macbook-pro-14-inch-silver/macbook-pro-14-inch-silver-01-228x228.webp",
+        "category": "MacBook",
+        "price": 1999,
+        "description": "MacBook Pro 14-inch with M3 chip, Liquid Retina XDR display, and advanced cooling system.",
+        "specification": [
+            "M3 chip",
+            "Liquid Retina XDR display",
+            "Advanced cooling system",
+            "16GB unified memory",
+            "512GB SSD"
+        ],
+        "availability": "In Stock",
+        "rating": 4.9
+    },
+    {
+        "product_id": "M002",
+        "product_title": "MacBook Air 13-inch (M2, 2022)",
+        "product_image": "https://www.startech.com.bd/image/cache/catalog/laptop/apple/macbook-air-2024/macbook-air-13-inch-m3-starlight/macbook-air-13-inch-m3-starlight-01-228x228.webp",
+        "category": "MacBook",
+        "price": 999,
+        "description": "MacBook Air 13-inch with M2 chip, Retina display, and long battery life.",
+        "specification": [
+            "M2 chip",
+            "Retina display",
+            "Long battery life",
+            "8GB unified memory",
+            "256GB SSD"
+        ],
+        "availability": "In Stock",
+        "rating": 4.8
+    },
+    {
+        "product_id": "M003",
+        "product_title": "MacBook Pro 16-inch (M1 Max, 2021)",
+        "product_image": "https://www.startech.com.bd/image/cache/catalog/laptop/apple/macbook-pro-16-inch-m3-pro-black/macbook-pro-16-inch-m3-pro-black-01-228x228.webp",
+        "category": "MacBook",
+        "price": 2499,
+        "description": "MacBook Pro 16-inch with M1 Max chip, Liquid Retina XDR display, and enhanced thermal architecture.",
+        "specification": [
+            "M1 Max chip",
+            "Liquid Retina XDR display",
+            "Enhanced thermal architecture",
+            "16GB unified memory",
+            "1TB SSD"
+        ],
+        "availability": "In Stock",
+        "rating": 4.9
+    },
+    {
+        "product_id": "M004",
+        "product_title": "MacBook Air 15-inch (M3, 2024)",
+        "product_image": "https://www.startech.com.bd/image/cache/catalog/laptop/apple/macbook-air-m2-chip/macbook-air-15-inch-midnight-01-228x228.webp",
+        "category": "MacBook",
+        "price": 1299,
+        "description": "MacBook Air 15-inch with M3 chip, Liquid Retina display, and improved battery life.",
+        "specification": [
+            "M3 chip",
+            "Liquid Retina display",
+            "Improved battery life",
+            "8GB unified memory",
+            "512GB SSD"
+        ],
+        "availability": "In Stock",
+        "rating": 4.8
+    },
+    {
+        "product_id": "M005",
+        "product_title": "MacBook Pro 13-inch (M2, 2022)",
+        "product_image": "https://www.startech.com.bd/image/cache/catalog/laptop/apple/macbook-pro-14-inch-silver/macbook-pro-14-inch-silver-01-228x228.webp",
+        "category": "MacBook",
+        "price": 1299,
+        "description": "MacBook Pro 13-inch with M2 chip, Retina display, and Touch Bar.",
+        "specification": [
+            "M2 chip",
+            "Retina display",
+            "Touch Bar",
+            "8GB unified memory",
+            "256GB SSD"
+        ],
+        "availability": "In Stock",
+        "rating": 4.7
+    },
+    {
+        "product_id": "M006",
+        "product_title": "MacBook Pro 14-inch (M1 Pro, 2021)",
+        "product_image": "https://www.startech.com.bd/image/cache/catalog/laptop/apple/macbook-pro-14-inch-silver/macbook-pro-14-inch-silver-01-228x228.webp",
+        "category": "MacBook",
+        "price": 1799,
+        "description": "MacBook Pro 14-inch with M1 Pro chip, Liquid Retina XDR display, and improved performance.",
+        "specification": [
+            "M1 Pro chip",
+            "Liquid Retina XDR display",
+            "Improved performance",
+            "16GB unified memory",
+            "512GB SSD"
+        ],
+        "availability": "In Stock",
+        "rating": 4.8
+    },
+    {
+        "product_id": "M007",
+        "product_title": "MacBook Air 13-inch (M1, 2020)",
+        "product_image": "https://www.startech.com.bd/image/cache/catalog/laptop/apple/macbook-air-2024/macbook-air-13-inch-m3-space-gray/macbook-air-13-inch-m3-space-gray-01-228x228.webp",
+        "category": "MacBook",
+        "price": 899,
+        "description": "MacBook Air 13-inch with M1 chip, Retina display, and long battery life.",
+        "specification": [
+            "M1 chip",
+            "Retina display",
+            "Long battery life",
+            "8GB unified memory",
+            "256GB SSD"
+        ],
+        "availability": "In Stock",
+        "rating": 4.7
+    },
+    {
+        "product_id": "M008",
+        "product_title": "MacBook Pro 16-inch (M1 Max, 2021)",
+        "product_image": "https://www.startech.com.bd/image/cache/catalog/laptop/apple/macbook-pro-16-inch-m3-pro-black/macbook-pro-16-inch-m3-pro-black-01-228x228.webp",
+        "category": "MacBook",
+        "price": 2499,
+        "description": "MacBook Pro 16-inch with M1 Max chip, Liquid Retina XDR display, and enhanced thermal architecture.",
+        "specification": [
+            "M1 Max chip",
+            "Liquid Retina XDR display",
+            "Enhanced thermal architecture",
+            "16GB unified memory",
+            "1TB SSD"
+        ],
+        "availability": "In Stock",
+        "rating": 4.9
+    },
+    {
+        "product_id": "M009",
+        "product_title": "MacBook Air 15-inch (M2, 2022)",
+        "product_image": "https://www.startech.com.bd/image/cache/catalog/laptop/apple/macbook-pro-16-inch-m3-pro-black/macbook-pro-16-inch-m3-pro-black-01-228x228.webp",
+        "category": "MacBook",
+        "price": 1299,
+        "description": "MacBook Air 15-inch with M2 chip, Liquid Retina display, and improved battery life.",
+        "specification": [
+            "M2 chip",
+            "Liquid Retina display",
+            "Improved battery life",
+            "8GB unified memory",
+            "512GB SSD"
+        ],
+        "availability": "In Stock",
+        "rating": 4.8
+    },
+    {
+        "product_id": "M010",
+        "product_title": "MacBook Pro 13-inch (M1, 2020)",
+        "product_image": "https://www.startech.com.bd/image/cache/catalog/laptop/apple/macbook-air/macbook-air-13-inch-silver/macbook-air-13-inch-01-228x228.webp",
+        "category": "MacBook",
+        "price": 1299,
+        "description": "MacBook Pro 13-inch with M1 chip, Retina display, and Touch Bar.",
+        "specification": [
+            "M1 chip",
+            "Retina display",
+            "Touch Bar",
+            "8GB unified memory",
+            "256GB SSD"
+        ],
+        "availability": "In Stock",
+        "rating": 4.7
+    }
+]

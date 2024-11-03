@@ -1,0 +1,162 @@
+[
+    {
+        "product_id": "A001",
+        "product_title": "Apple AirPods Pro",
+        "product_image": "https://example.com/airpods_pro.jpg",
+        "category": "Accessories",
+        "price": 249,
+        "description": "Apple AirPods Pro with active noise cancellation, transparency mode, and wireless charging.",
+        "specification": [
+            "Active noise cancellation",
+            "Transparency mode",
+            "Wireless charging",
+            "Sweat and water resistant"
+        ],
+        "availability": "In Stock",
+        "rating": 4.8
+    },
+    {
+        "product_id": "A002",
+        "product_title": "Samsung Galaxy Buds Pro",
+        "product_image": "https://example.com/galaxy_buds_pro.jpg",
+        "category": "Accessories",
+        "price": 199,
+        "description": "Samsung Galaxy Buds Pro with intelligent active noise cancelling, 2-way speakers, and IPX7 water resistance.",
+        "specification": [
+            "Intelligent active noise cancelling",
+            "2-way speakers",
+            "IPX7 water resistance",
+            "Wireless charging"
+        ],
+        "availability": "In Stock",
+        "rating": 4.7
+    },
+    {
+        "product_id": "A003",
+        "product_title": "Sony WH-1000XM4",
+        "product_image": "https://example.com/sony_wh_1000xm4.jpg",
+        "category": "Accessories",
+        "price": 349,
+        "description": "Sony WH-1000XM4 noise cancelling wireless headphones with 30 hours battery life and touch sensor controls.",
+        "specification": [
+            "Noise cancelling",
+            "30 hours battery life",
+            "Touch sensor controls",
+            "Speak-to-chat technology"
+        ],
+        "availability": "In Stock",
+        "rating": 4.9
+    },
+    {
+        "product_id": "A004",
+        "product_title": "Anker PowerCore 10000",
+        "product_image": "https://example.com/anker_powercore_10000.jpg",
+        "category": "Accessories",
+        "price": 49,
+        "description": "Anker PowerCore 10000 portable charger with ultra-compact design and high-speed charging.",
+        "specification": [
+            "Ultra-compact design",
+            "High-speed charging",
+            "10000mAh capacity",
+            "MultiProtect safety system"
+        ],
+        "availability": "In Stock",
+        "rating": 4.6
+    },
+    {
+        "product_id": "A005",
+        "product_title": "Logitech MX Master 3",
+        "product_image": "https://example.com/logitech_mx_master_3.jpg",
+        "category": "Accessories",
+        "price": 99,
+        "description": "Logitech MX Master 3 advanced wireless mouse with MagSpeed scroll wheel and ergonomic design.",
+        "specification": [
+            "MagSpeed scroll wheel",
+            "Ergonomic design",
+            "USB-C quick charging",
+            "Customizable buttons"
+        ],
+        "availability": "In Stock",
+        "rating": 4.8
+    },
+    {
+        "product_id": "A006",
+        "product_title": "Bose SoundLink Revolve",
+        "product_image": "https://example.com/bose_soundlink_revolve.jpg",
+        "category": "Accessories",
+        "price": 199,
+        "description": "Bose SoundLink Revolve Bluetooth speaker with 360-degree sound and water-resistant design.",
+        "specification": [
+            "360-degree sound",
+            "Water-resistant design",
+            "12 hours battery life",
+            "Built-in microphone"
+        ],
+        "availability": "In Stock",
+        "rating": 4.7
+    },
+    {
+        "product_id": "A007",
+        "product_title": "Amazon Echo Dot (4th Gen)",
+        "product_image": "https://example.com/echo_dot_4th_gen.jpg",
+        "category": "Accessories",
+        "price": 49,
+        "description": "Amazon Echo Dot (4th Gen) smart speaker with Alexa voice control and compact design.",
+        "specification": [
+            "Alexa voice control",
+            "Compact design",
+            "Built-in speaker",
+            "Bluetooth connectivity"
+        ],
+        "availability": "In Stock",
+        "rating": 4.6
+    },
+    {
+        "product_id": "A008",
+        "product_title": "Tile Mate (2022)",
+        "product_image": "https://example.com/tile_mate_2022.jpg",
+        "category": "Accessories",
+        "price": 24,
+        "description": "Tile Mate Bluetooth tracker with replaceable battery and water-resistant design.",
+        "specification": [
+            "Bluetooth tracking",
+            "Replaceable battery",
+            "Water-resistant design",
+            "Range up to 200 ft"
+        ],
+        "availability": "In Stock",
+        "rating": 4.5
+    },
+    {
+        "product_id": "A009",
+        "product_title": "Belkin BoostCharge Wireless Charger",
+        "product_image": "https://example.com/belkin_boostcharge_wireless.jpg",
+        "category": "Accessories",
+        "price": 29,
+        "description": "Belkin BoostCharge wireless charger with 15W fast charging and Qi compatibility.",
+        "specification": [
+            "15W fast charging",
+            "Qi compatibility",
+            "Non-slip design",
+            "LED indicator"
+        ],
+        "availability": "In Stock",
+        "rating": 4.7
+    },
+    {
+        "product_id": "A010",
+        "product_title": "Sandisk Ultra Dual Drive",
+        "product_image": "https://example.com/sandisk_ultra_dual_drive.jpg",
+        "category": "Accessories",
+        "price": 39,
+        "description": "Sandisk Ultra Dual Drive with 128GB storage, USB-C and USB-A connectors, and high-speed data transfer.",
+        "specification": [
+            "128GB storage",
+            "USB-C and USB-A connectors",
+            "High-speed data transfer",
+            "Compact design"
+        ],
+        "availability": "In Stock",
+        "rating": 4.6
+    }
+]

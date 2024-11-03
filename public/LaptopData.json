@@ -1,0 +1,165 @@
+[
+    {
+        "product_id": "L001",
+        "product_title": "MacBook Pro 16-inch",
+        "product_image": "https://www.startech.com.bd/image/cache/catalog/laptop/apple/macbook-pro-16-inch-m3-pro-black/macbook-pro-16-inch-m3-pro-black-01-228x228.webp",
+        "category": "Laptop",
+        "price": 2399,
+        "description": "Apple MacBook Pro with 16-inch Retina display, Apple M1 Pro chip, and 512GB SSD.",
+        "specification": [
+            "Apple M1 Pro chip",
+            "16-inch Retina display",
+            "512GB SSD",
+            "16GB RAM"
+        ],
+        "availability": "In Stock",
+        "rating": 4.8
+    },
+    {
+        "product_id": "L002",
+        "product_title": "Dell XPS 13",
+        "product_image": "https://www.startech.com.bd/image/cache/catalog/laptop/dell/xps-13-plus-9320/xps-13-plus-9320-01-228x228.webp",
+        "category": "Laptop",
+        "price": 1299,
+        "description": "Dell XPS 13 with InfinityEdge display, Intel Core i7 processor, and 256GB SSD.",
+        "specification": [
+            "Intel Core i7",
+            "13.4-inch FHD+ display",
+            "256GB SSD",
+            "16GB RAM"
+        ],
+        "availability": "In Stock",
+        "rating": 4.6
+    },
+    {
+        "product_id": "L003",
+        "product_title": "HP Spectre x360",
+        "product_image": "https://www.startech.com.bd/image/cache/catalog/laptop/hp-laptop/envy-15-ep1890tx/envy-15-ep1890tx-01-228x228.jpg",
+        "category": "Laptop",
+        "price": 1499,
+        "description": "HP Spectre x360 with 360° hinge, Intel Core i7, and 512GB SSD.",
+        "specification": [
+            "Intel Core i7",
+            "13.3-inch 4K UHD touchscreen",
+            "512GB SSD",
+            "16GB RAM"
+        ],
+        "availability": "Out of Stock",
+        "rating": 4.7
+    },
+    {
+        "product_id": "L004",
+        "product_title": "Lenovo ThinkPad X1 Carbon",
+        "product_image": "https://www.startech.com.bd/image/cache/catalog/laptop/lenovo/thinkpad-x1-carbon-g11/thinkpad-x1-carbon-g11-01-228x228.webp",
+        "category": "Laptop",
+        "price": 1699,
+        "description": "Lenovo ThinkPad X1 Carbon with Intel Core i7, 14-inch display, and 1TB SSD.",
+        "specification": [
+            "Intel Core i7",
+            "14-inch FHD display",
+            "1TB SSD",
+            "16GB RAM"
+        ],
+        "availability": "In Stock",
+        "rating": 4.9
+    },
+    {
+        "product_id": "L005",
+        "product_title": "Asus ROG Zephyrus G14",
+        "product_image": "https://www.startech.com.bd/image/cache/catalog/laptop/asus/rog-zephyrus-g14-ga403uv/rog-zephyrus-g14-ga403uv-01-228x228.webp",
+        "category": "Laptop",
+        "price": 1799,
+        "description": "Asus ROG Zephyrus G14 with AMD Ryzen 9, 1TB SSD, and NVIDIA RTX 2060.",
+        "specification": [
+            "AMD Ryzen 9",
+            "14-inch FHD display",
+            "1TB SSD",
+            "16GB RAM",
+            "NVIDIA RTX 2060"
+        ],
+        "availability": "In Stock",
+        "rating": 4.8
+    },
+    {
+        "product_id": "L006",
+        "product_title": "Acer Predator Helios 300",
+        "product_image": "https://www.startech.com.bd/image/cache/catalog/laptop/acer/ph16-71-i7/ph16-71-i7-500x500.webp",
+        "category": "Laptop",
+        "price": 1199,
+        "description": "Acer Predator Helios 300 with Intel Core i7, 512GB SSD, and NVIDIA GTX 1660 Ti.",
+        "specification": [
+            "Intel Core i7",
+            "15.6-inch FHD display",
+            "512GB SSD",
+            "16GB RAM",
+            "NVIDIA GTX 1660 Ti"
+        ],
+        "availability": "In Stock",
+        "rating": 4.5
+    },
+    {
+        "product_id": "L007",
+        "product_title": "Microsoft Surface Laptop 4",
+        "product_image": "https://www.startech.com.bd/image/cache/catalog/laptop/microsoft/surface-pro-9/surface-pro-9-platinum-01-500x500.webp",
+        "category": "Laptop",
+        "price": 1299,
+        "description": "Microsoft Surface Laptop 4 with 13.5-inch touchscreen, Intel Core i5, and 512GB SSD.",
+        "specification": [
+            "Intel Core i5",
+            "13.5-inch PixelSense touchscreen",
+            "512GB SSD",
+            "8GB RAM"
+        ],
+        "availability": "In Stock",
+        "rating": 4.7
+    },
+    {
+        "product_id": "L008",
+        "product_title": "Razer Blade 15",
+        "product_image": "https://www.startech.com.bd/image/cache/catalog/laptop/razer/blade-15/base-model_1-500x500.jpg",
+        "category": "Laptop",
+        "price": 1999,
+        "description": "Razer Blade 15 with Intel Core i7, 1TB SSD, and NVIDIA RTX 2070.",
+        "specification": [
+            "Intel Core i7",
+            "15.6-inch FHD display",
+            "1TB SSD",
+            "16GB RAM",
+            "NVIDIA RTX 2070"
+        ],
+        "availability": "In Stock",
+        "rating": 4.8
+    },
+    {
+        "product_id": "L009",
+        "product_title": "Samsung Galaxy Book Pro",
+        "product_image": "https://www.startech.com.bd/image/cache/catalog/laptop/samsung/galaxy-book-pro-360/galaxy-book-pro-360-02-500x500.jpg",
+        "category": "Laptop",
+        "price": 1099,
+        "description": "Samsung Galaxy Book Pro with Intel Core i5, 512GB SSD, and 15.6-inch AMOLED display.",
+        "specification": [
+            "Intel Core i5",
+            "15.6-inch AMOLED display",
+            "512GB SSD",
+            "8GB RAM"
+        ],
+        "availability": "In Stock",
+        "rating": 4.6
+    },
+    {
+        "product_id": "L010",
+        "product_title": "Asus ZenBook 14",
+        "product_image": "https://www.startech.com.bd/image/cache/catalog/laptop/asus/zenbook-pro-14-oled/zenbook-pro-14-oled-01-500x500.webp",
+        "category": "Laptop",
+        "price": 999,
+        "description": "Asus ZenBook 14 with AMD Ryzen 7, 512GB SSD, and 14-inch NanoEdge display.",
+        "specification": [
+            "AMD Ryzen 7",
+            "14-inch NanoEdge display",
+            "512GB SSD",
+            "16GB RAM"
+        ],
+        "availability": "In Stock",
+        "rating": 4.7
+    }
+]
