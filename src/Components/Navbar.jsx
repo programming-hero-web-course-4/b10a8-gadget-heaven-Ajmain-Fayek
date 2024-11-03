@@ -54,9 +54,12 @@ const Navbar = () => {
                         </li>
                     </ul>
                 </div>
-                <a className="text-lg sm:text-xl lg:text-2xl font-bold">
-                    Gadget Haven
-                </a>
+                <Link
+                    to="/"
+                    className="text-lg sm:text-xl lg:text-2xl font-bold cursor-pointer"
+                >
+                    Gadget Heaven
+                </Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="gap-16 menu-horizontal px-1">
