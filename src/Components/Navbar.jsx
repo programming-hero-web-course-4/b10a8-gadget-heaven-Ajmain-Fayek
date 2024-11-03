@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
     return (
-        <div className="navbar gap-4 justify-between max-w-screen-2xl px-2 sm:px-6 md:px-10 lg:px-28 mx-auto">
+        <div className="navbar gap-4 justify-between max-w-screen-2xl px-2 sm:px-6 md:px-10 lg:px-20 mx-auto">
             <div className="flex items-center">
                 <div className="dropdown">
                     <div
@@ -47,6 +47,11 @@ const Navbar = () => {
                                 Dhashboard
                             </Link>
                         </li>
+                        <li>
+                            <Link to="/about us" className="link-hover">
+                                About Us
+                            </Link>
+                        </li>
                     </ul>
                 </div>
                 <a className="text-lg sm:text-xl lg:text-2xl font-bold">
@@ -70,13 +75,18 @@ const Navbar = () => {
                             Dhashboard
                         </Link>
                     </li>
+                    <li>
+                        <Link to="/about us" className="link-hover">
+                            About Us
+                        </Link>
+                    </li>
                 </ul>
             </div>
             <div className="gap-4">
-                <a className="btn bg-white rounded-full">
+                <a className="btn bg-white btn-circle">
                     <AddToCard_SVG />
                 </a>
-                <a className="btn bg-white rounded-full">
+                <a className="btn bg-white btn-circle">
                     <WishList_SVG />
                 </a>
             </div>

@@ -3,7 +3,7 @@ import MainLayout from "../MainLayout/MainLayout";
 import Home from "../Pages/Home";
 import Statistics from "../Pages/Statistics";
 import Dashboard from "../Pages/Dashboard";
-import About from "../Pages/About";
+import AboutUs from "../Pages/AboutUs";
 import ErrorPage from "../Pages/ErrorPage";
 
 const routes = createBrowserRouter([
@@ -25,8 +25,8 @@ const routes = createBrowserRouter([
                 element: <Dashboard />,
             },
             {
-                path: "/about",
-                element: <About />,
+                path: "/about us",
+                element: <AboutUs />,
             },
         ],
     },
