@@ -1,4 +1,4 @@
-# Gadget Haven
+# <img src="./src/assets/favicon-16x16.png"> Gadget Haven
 
 <p align="center"><img src="./src/assets/banner.jpg" height="250px"></p>
 
