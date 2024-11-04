@@ -14,4 +14,4 @@ Welcome to **Gadget Haven** your ultimate hub for the latest and greatest in tec
 
 ### Take a glance into the Project
 
-- Live Link:  <>
+- Live Link:  <https://web10-1348-gadget-heaven.netlify.app/>
