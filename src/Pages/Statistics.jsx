@@ -1,7 +1,13 @@
 import React from "react";
+import SetTitle from "../Components/setTitle";
 
 const Statistics = () => {
-    return <div>Statistics</div>;
+    return (
+        <>
+            <SetTitle pagetitle="Statistics | Gadget Heaven" />
+            <div>Statistics</div>
+        </>
+    );
 };
 
 export default Statistics;

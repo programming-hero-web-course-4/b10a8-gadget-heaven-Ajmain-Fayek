@@ -19,25 +19,25 @@ const Footer = () => {
                     <h6 className="footer-title opacity-100">Services</h6>
                     <Link
                         to="/product support"
-                        className="link link-hover text-gray-500 text-sm md:text-base"
+                        className="link link-hover w-fit mx-auto text-gray-500 text-sm md:text-base"
                     >
                         Product Support
                     </Link>
                     <Link
                         to="/order tracking"
-                        className="link link-hover text-gray-500 text-sm md:text-base"
+                        className="link link-hover w-fit mx-auto text-gray-500 text-sm md:text-base"
                     >
                         Order Tracking
                     </Link>
                     <Link
                         to="/shipping & selivery"
-                        className="link link-hover text-gray-500 text-sm md:text-base"
+                        className="link link-hover w-fit mx-auto text-gray-500 text-sm md:text-base"
                     >
                         Shipping & Delivery
                     </Link>
                     <Link
                         to="/returns"
-                        className="link link-hover text-gray-500 text-sm md:text-base"
+                        className="link link-hover w-fit mx-auto text-gray-500 text-sm md:text-base"
                     >
                         Returns
                     </Link>
@@ -46,19 +46,19 @@ const Footer = () => {
                     <h6 className="footer-title opacity-100">Company</h6>
                     <Link
                         to="/about us"
-                        className="link link-hover text-gray-500 text-sm md:text-base"
+                        className="link link-hover w-fit mx-auto text-gray-500 text-sm md:text-base"
                     >
                         About Us
                     </Link>
                     <Link
                         to="/careers"
-                        className="link link-hover text-gray-500 text-sm md:text-base"
+                        className="link link-hover w-fit mx-auto text-gray-500 text-sm md:text-base"
                     >
                         Careers
                     </Link>
                     <Link
                         to="/contact"
-                        className="link link-hover text-gray-500 text-sm md:text-base"
+                        className="link link-hover w-fit mx-auto text-gray-500 text-sm md:text-base"
                     >
                         Contact
                     </Link>
@@ -67,19 +67,19 @@ const Footer = () => {
                     <h6 className="footer-title opacity-100">Legal</h6>
                     <Link
                         to="Terms of Service"
-                        className="link link-hover text-gray-500 text-sm md:text-base"
+                        className="link link-hover w-fit mx-auto text-gray-500 text-sm md:text-base"
                     >
                         Terms of Service
                     </Link>
                     <Link
                         to="Privacy policy"
-                        className="link link-hover text-gray-500 text-sm md:text-base"
+                        className="link link-hover w-fit mx-auto text-gray-500 text-sm md:text-base"
                     >
                         Privacy policy
                     </Link>
                     <Link
                         to="Cookie policy"
-                        className="link link-hover text-gray-500 text-sm md:text-base"
+                        className="link link-hover w-fit mx-auto text-gray-500 text-sm md:text-base"
                     >
                         Cookie policy
                     </Link>
