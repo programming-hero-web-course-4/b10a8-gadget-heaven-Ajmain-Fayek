@@ -5,28 +5,55 @@ import Statistics from "../Pages/Statistics";
 import Dashboard from "../Pages/Dashboard";
 import AboutUs from "../Pages/AboutUs";
 import ErrorPage from "../Pages/ErrorPage";
+import SetTitle from "../Components/setTitle";
 
 const routes = createBrowserRouter([
     {
         path: "/",
         element: <MainLayout />,
-        errorElement: <ErrorPage />,
+        errorElement: (
+            <>
+                <SetTitle pagetitle="Error | Gadget Heaven" />
+                <ErrorPage />
+            </>
+        ),
         children: [
             {
                 path: "/",
-                element: <Home />,
+                loader: ()=> fetch('./LaptopData.json'),
+                element: (
+                    <>
+                        <SetTitle pagetitle="Home | Gadget Heaven" />
+                        <Home />
+                    </>
+                ),
             },
             {
                 path: "/statistics",
-                element: <Statistics />,
+                element: (
+                    <>
+                        <SetTitle pagetitle="Statistics | Gadget Heaven" />
+                        <Statistics />
+                    </>
+                ),
             },
             {
                 path: "/dashboard",
-                element: <Dashboard />,
+                element: (
+                    <>
+                        <SetTitle pagetitle="Dashboard | Gadget Heaven" />
+                        <Dashboard />
+                    </>
+                ),
             },
             {
                 path: "/about us",
-                element: <AboutUs />,
+                element: (
+                    <>
+                        <SetTitle pagetitle="About Us | Gadget Heaven" />
+                        <AboutUs />
+                    </>
+                ),
             },
         ],
     },
