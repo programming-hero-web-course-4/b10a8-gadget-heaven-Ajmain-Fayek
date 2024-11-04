@@ -2,9 +2,9 @@ import React from "react";
 
 const ProductCard = ({name = "Example Product", imageUrl = null, price = "99.99"}) => {
     return (
-        <div className="space-y-4 rounded-lg bg-white p-6 shadow-sm border">
+        <div className="space-y-4 rounded-lg bg-white p-6 shadow-sm border mx-auto">
             <img
-                className={`h-[225px] w-[225px] rounded-lg object-cover ${
+                className={`h-[250px] w-[250px] rounded-lg object-cover ${
                     imageUrl ? "bg-white" : "bg-gray-300"
                 }`}
                 src={imageUrl}

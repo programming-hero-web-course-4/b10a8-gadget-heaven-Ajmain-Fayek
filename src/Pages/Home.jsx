@@ -3,7 +3,7 @@ import ProductsContainer from "../Components/ProductsContainer";
 
 const Home = () => {
     return (
-        <div>
+        <div className="mx-auto">
             {/* Headings */}
             {/* Button */}
             {/* Banner Image */}

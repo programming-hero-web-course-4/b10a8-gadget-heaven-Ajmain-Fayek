@@ -7,13 +7,13 @@ const ProductsContainer = () => {
     const laptops = useLoaderData();
 
     return (
-        <>
+        <div className="mx-auto">
             {/* Heading */}
             <p className="text-center px-4 py-6 lg:py-14 font-bold text-2xl md:text-3xl lg:text-4xl">Explore Cutting-Edge Gadgets</p>
             {/* Categories   ||   ProductCard  */}
-            <div className="flex flex-col lg:flex-row gap-6 w-full">
+            <div className="flex flex-col lg:flex-row gap-4">
                 <Categories />
-                <div className="grid grid-cols-1 sm:grid-cols-2 items-center justify-center lg:grid-cols-3 gap-2">
+                <div className="grid grid-cols-1 sm:grid-cols-2 items-center justify-center lg:grid-cols-3 gap-2 mx-auto">
                     {laptops.map((laptop) => (
                         <ProductCard
                             key={laptop.product_id}
@@ -24,7 +24,7 @@ const ProductsContainer = () => {
                     ))}
                 </div>
             </div>
-        </>
+        </div>
     );
 };
 
