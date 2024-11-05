@@ -11,11 +11,11 @@ const ProductCard = ({
     return (
         <div className="space-y-4 rounded-lg bg-white p-6 shadow-sm border mx-auto">
             <img
-                className={`h-[250px] w-[250px] rounded-lg object-cover ${
+                className={`w-[250px] rounded-lg object-cover ${
                     imageUrl ? "bg-white" : "bg-gray-300"
                 }`}
                 src={imageUrl}
-                alt="card navigate ui"
+                alt={name}
             />
             <div className="grid gap-2">
                 <h1 className="text-lg font-bold ">{name}</h1>

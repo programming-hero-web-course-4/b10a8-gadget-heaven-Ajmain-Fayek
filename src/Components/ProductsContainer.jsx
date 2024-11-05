@@ -31,7 +31,7 @@ const ProductsContainer = () => {
             {/* Categories   ||   ProductCard  */}
             <div className="flex flex-col lg:flex-row gap-4">
                 <Categories />
-                <div className="grid grid-cols-1 sm:grid-cols-2 items-center justify-center lg:grid-cols-3 gap-2 mx-auto">
+                <div className="grid grid-cols-1 sm:grid-cols-2 items-center justify-center lg:grid-cols-3 gap-4 mx-auto">
                     {laptopsData.map((laptop) => (
                         <ProductCard
                             key={laptop.product_id}

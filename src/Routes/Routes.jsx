@@ -7,6 +7,8 @@ import AboutUs from "../Pages/AboutUs";
 import ErrorPage from "../Pages/ErrorPage";
 import SetTitle from "../Components/setTitle";
 import ProductDetails from "../Pages/ProductDetails";
+import Cart from "../Components/Cart";
+import WishList from "../Components/WishList";
 
 const routes = createBrowserRouter([
     {
@@ -46,9 +48,19 @@ const routes = createBrowserRouter([
                         <Dashboard />
                     </>
                 ),
+                children: [
+                    {
+                        path: "/dashboard",
+                        element: <Cart/>
+                    },
+                    {
+                        path: "/dashboard/wishlist",
+                        element: <WishList/>
+                    }
+                ],
             },
             {
-                path: "/about us",
+                path: "/aboutUs",
                 element: (
                     <>
                         <SetTitle pagetitle="About Us | Gadget Heaven" />
@@ -57,7 +69,7 @@ const routes = createBrowserRouter([
                 ),
             },
             {
-                path: "/details/:products name",
+                path: "/details/:productsName",
                 element: <ProductDetails />,
             },
         ],

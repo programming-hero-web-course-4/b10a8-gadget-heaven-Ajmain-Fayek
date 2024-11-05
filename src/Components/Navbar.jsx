@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useState, useContext } from "react";
 import WishList_SVG from "./WishList_SVG";
 import AddToCard_SVG from "./AddToCard_SVG";
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
+import CartWishContext from "../Context/ButtonsActiveStateContext";
 
 const Navbar = () => {
+    const { cartBtn, wishListBtn, defaultBtn, toggleCart, toggleWishlist } =
+        useContext(CartWishContext);
+
     return (
         <div className="navbar gap-4 justify-between max-w-screen-2xl px-2 sm:px-6 md:px-10 lg:px-20 mx-auto">
             <div className="flex items-center">
@@ -30,31 +34,48 @@ const Navbar = () => {
                     </div>
                     <ul
                         tabIndex={0}
-                        className="menu menu-sm dropdown-content bg-color-pirmary text-white border rounded-box z-[1] mt-3 w-52 p-2 shadow-primary-shadow"
+                        className="navbarLink  menu menu-sm dropdown-content bg-color-pirmary text-white border rounded-box z-[1] mt-3 w-52 p-2 shadow-primary-shadow"
                     >
                         <li>
-                            <Link to="/" className="link-hover">
+                            <NavLink
+                                onClick={defaultBtn}
+                                to="/"
+                                className="link-hover"
+                            >
                                 Home
-                            </Link>
+                            </NavLink>
                         </li>
                         <li>
-                            <Link to="/statistics" className="link-hover">
+                            <NavLink
+                                onClick={defaultBtn}
+                                to="/statistics"
+                                className="link-hover"
+                            >
                                 Statistics
-                            </Link>
+                            </NavLink>
                         </li>
                         <li>
-                            <Link to="/dashboard" className="link-hover">
+                            <NavLink
+                                onClick={cartBtn}
+                                to="/dashboard"
+                                className="link-hover"
+                            >
                                 Dhashboard
-                            </Link>
+                            </NavLink>
                         </li>
                         <li>
-                            <Link to="/about us" className="link-hover">
+                            <NavLink
+                                onClick={defaultBtn}
+                                to="/aboutUs"
+                                className="link-hover"
+                            >
                                 About Us
-                            </Link>
+                            </NavLink>
                         </li>
                     </ul>
                 </div>
                 <Link
+                    onClick={defaultBtn}
                     to="/"
                     className="text-lg sm:text-xl lg:text-2xl font-bold cursor-pointer"
                 >
@@ -62,36 +83,68 @@ const Navbar = () => {
                 </Link>
             </div>
             <div className="navbar-center hidden lg:flex">
-                <ul className="gap-16 menu-horizontal px-1">
+                <ul className="navbarLink gap-16 menu-horizontal px-1">
                     <li>
-                        <Link to="/" className="link-hover">
+                        <NavLink
+                            onClick={defaultBtn}
+                            to="/"
+                            className="link-hover"
+                        >
                             Home
-                        </Link>
+                        </NavLink>
                     </li>
                     <li>
-                        <Link to="/statistics" className="link-hover">
+                        <NavLink
+                            onClick={defaultBtn}
+                            to="/statistics"
+                            className="link-hover"
+                        >
                             Statistics
-                        </Link>
+                        </NavLink>
                     </li>
                     <li>
-                        <Link to="/dashboard" className="link-hover">
+                        <NavLink
+                            onClick={cartBtn}
+                            to="/dashboard"
+                            className="link-hover"
+                        >
                             Dhashboard
-                        </Link>
+                        </NavLink>
                     </li>
                     <li>
-                        <Link to="/about us" className="link-hover">
+                        <NavLink
+                            onClick={defaultBtn}
+                            to="/aboutUs"
+                            className="link-hover"
+                        >
                             About Us
-                        </Link>
+                        </NavLink>
                     </li>
                 </ul>
             </div>
-            <div className="gap-4">
-                <a className="btn bg-white btn-circle">
+            <div className="cartWishBtn gap-4">
+                <NavLink
+                    onClick={cartBtn}
+                    to="/dashboard"
+                    className={
+                        toggleCart
+                            ? "btn bg-color-pirmary btn-circle"
+                            : "btn bg-white btn-circle"
+                    }
+                >
                     <AddToCard_SVG />
-                </a>
-                <a className="btn bg-white btn-circle">
+                </NavLink>
+                <NavLink
+                    onClick={wishListBtn}
+                    to="/dashboard/wishlist"
+                    className={
+                        toggleWishlist
+                            ? "btn bg-color-pirmary btn-circle"
+                            : "btn bg-white btn-circle"
+                    }
+                >
                     <WishList_SVG />
-                </a>
+                </NavLink>
             </div>
         </div>
     );

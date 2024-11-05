@@ -2,21 +2,24 @@ import React from "react";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import { Outlet } from "react-router-dom";
+import CartWishState from "../Context/CartWishState";
 
 const MainLayout = () => {
     return (
-        <div>
-            {/* Navbar */}
-            <Navbar />
-
-            {/* Outlet */}
+        <CartWishState>
             <div>
-                <Outlet />
-            </div>
+                {/* Navbar */}
+                <Navbar />
 
-            {/* Footer */}
-            <Footer />
-        </div>
+                {/* Outlet */}
+                <div>
+                    <Outlet />
+                </div>
+
+                {/* Footer */}
+                <Footer />
+            </div>
+        </CartWishState>
     );
 };
 
