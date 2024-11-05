@@ -12,7 +12,7 @@ const MainLayout = () => {
                 <Navbar />
 
                 {/* Outlet */}
-                <div>
+                <div className="bg-gray-200 py-16">
                     <Outlet />
                 </div>
 

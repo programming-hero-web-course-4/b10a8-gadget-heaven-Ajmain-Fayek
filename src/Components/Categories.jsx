@@ -6,7 +6,7 @@ const Categories = () => {
 
 
     return (
-        <div className="category flex lg:flex-col flex-wrap lg:flex-nowrap justify-start items-start gap-4 p-4 rounded-xl border h-fit min-w-48">
+        <div className="category bg-white flex lg:flex-col flex-wrap lg:flex-nowrap justify-start items-start gap-4 p-4 rounded-xl border h-fit min-w-48">
             <NavLink
                 to="/"
                 id="c1"

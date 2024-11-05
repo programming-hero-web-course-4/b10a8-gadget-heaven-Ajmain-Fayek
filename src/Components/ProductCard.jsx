@@ -9,7 +9,7 @@ const ProductCard = ({
     const navigate = useNavigate();
     const evendHandle = () => navigate(`/details/${name}`);
     return (
-        <div className="space-y-4 rounded-lg bg-white p-6 shadow-sm border mx-auto">
+        <div className="space-y-4 rounded-xl bg-white p-6 shadow-sm border mx-auto">
             <img
                 className={`w-[250px] rounded-lg object-cover ${
                     imageUrl ? "bg-white" : "bg-gray-300"
