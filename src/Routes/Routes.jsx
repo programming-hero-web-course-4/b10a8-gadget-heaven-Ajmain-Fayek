@@ -6,6 +6,7 @@ import Dashboard from "../Pages/Dashboard";
 import AboutUs from "../Pages/AboutUs";
 import ErrorPage from "../Pages/ErrorPage";
 import SetTitle from "../Components/setTitle";
+import ProductDetails from "../Pages/ProductDetails";
 
 const routes = createBrowserRouter([
     {
@@ -20,13 +21,13 @@ const routes = createBrowserRouter([
         children: [
             {
                 path: "/",
-                loader: ()=> fetch('./LaptopData.json'),
                 element: (
                     <>
                         <SetTitle pagetitle="Home | Gadget Heaven" />
                         <Home />
                     </>
                 ),
+                loader: async () => await fetch("/LaptopData.json"),
             },
             {
                 path: "/statistics",
@@ -54,6 +55,10 @@ const routes = createBrowserRouter([
                         <AboutUs />
                     </>
                 ),
+            },
+            {
+                path: "/details/:products name",
+                element: <ProductDetails />,
             },
         ],
     },

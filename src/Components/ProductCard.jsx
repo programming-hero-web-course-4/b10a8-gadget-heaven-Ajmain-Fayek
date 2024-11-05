@@ -1,6 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
-const ProductCard = ({name = "Example Product", imageUrl = null, price = "99.99"}) => {
+const ProductCard = ({
+    name = "Example Product",
+    imageUrl = null,
+    price = "99.99",
+}) => {
+    const navigate = useNavigate();
+    const evendHandle = () => navigate(`/details/${name}`);
     return (
         <div className="space-y-4 rounded-lg bg-white p-6 shadow-sm border mx-auto">
             <img
@@ -17,7 +24,10 @@ const ProductCard = ({name = "Example Product", imageUrl = null, price = "99.99"
                 </div>
             </div>
             <div className="flex gap-4">
-                <button className="rounded-full text-color-pirmary border border-color-pirmary px-4  py-2  duration-300 hover:bg-gray-200">
+                <button
+                    onClick={evendHandle}
+                    className="rounded-full text-color-pirmary border border-color-pirmary px-4  py-2  duration-300 hover:bg-gray-200"
+                >
                     View Details
                 </button>
             </div>
