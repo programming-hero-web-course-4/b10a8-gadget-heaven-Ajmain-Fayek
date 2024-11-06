@@ -1,17 +1,29 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
+import ProductDetailsContext from "../Context/ProductDetailsContext";
 
 const ProductCard = ({
     name = "Example Product",
     imageUrl = null,
     price = "99.99",
+    laptop,
 }) => {
+    const { handleProductDetails } = useContext(
+        ProductDetailsContext
+    );
+    // console.log(productDetails);
+
     const navigate = useNavigate();
-    const evendHandle = () => navigate(`/details/${name}`);
+
+    const evendHandle = (laptop, name) => {
+        navigate(`/details/${name}`);
+        handleProductDetails(laptop);
+    };
+
     return (
-        <div className="space-y-4 rounded-xl bg-white p-6 shadow-sm border mx-auto">
+        <div className="space-y-4 rounded-xl bg-white p-6 shadow-sm border w-full mx-auto">
             <img
-                className={`w-[250px] rounded-lg object-cover ${
+                className={`w-[250px] min-h-[150px] rounded-lg object-cover mx-auto ${
                     imageUrl ? "bg-white" : "bg-gray-300"
                 }`}
                 src={imageUrl}
@@ -25,7 +37,7 @@ const ProductCard = ({
             </div>
             <div className="flex gap-4">
                 <button
-                    onClick={evendHandle}
+                    onClick={() =>  evendHandle(laptop, name)}
                     className="rounded-full text-color-pirmary border border-color-pirmary px-4  py-2  duration-300 hover:bg-gray-200"
                 >
                     View Details

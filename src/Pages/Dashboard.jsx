@@ -23,11 +23,11 @@ const Dashboard = () => {
     return (
         <>
             <div>Dashboard</div>
-            <Link onClick={cartBtn} to="/dashboard">
+            <Link onClick={cartBtn} to="/dashboard" className="btn">
                 Cart
             </Link>
             <br />
-            <Link onClick={wishListBtn} to="/dashboard/wishlist">
+            <Link onClick={wishListBtn} to="/dashboard/wishlist" className="btn">
                 wishlist
             </Link>
             <Outlet />

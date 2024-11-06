@@ -1,12 +1,22 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import WishList_SVG from "./WishList_SVG";
 import AddToCard_SVG from "./AddToCard_SVG";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink, Link, useLocation } from "react-router-dom";
 import CartWishContext from "../Context/ButtonsActiveStateContext";
 
 const Navbar = () => {
     const { cartBtn, wishListBtn, defaultBtn, toggleCart, toggleWishlist } =
         useContext(CartWishContext);
+    
+    const location = useLocation()
+
+    const [ toggle, setToggle ] = useState(true);
+
+    useEffect(() => {
+        if ((location.pathname == "/")) {
+            return setToggle(true);
+        } else return setToggle(false);
+    }, [location]);
 
     return (
         <div className="navbar gap-4 justify-between max-w-screen-2xl px-2 sm:px-6 md:px-10 lg:px-20 mx-auto">
@@ -36,7 +46,7 @@ const Navbar = () => {
                         tabIndex={0}
                         className="navbarLink  menu menu-sm dropdown-content bg-color-pirmary text-white border rounded-box z-[1] mt-3 w-52 p-2 shadow-primary-shadow"
                     >
-                        <li>
+                        <li className="home">
                             <NavLink
                                 onClick={defaultBtn}
                                 to="/"
@@ -77,17 +87,36 @@ const Navbar = () => {
                 <Link
                     onClick={defaultBtn}
                     to="/"
+                    style={
+                        toggle
+                            ? { color: "white" }
+                            : { color: "black" }
+                    }
                     className="text-lg sm:text-xl lg:text-2xl font-bold cursor-pointer"
                 >
                     Gadget Heaven
                 </Link>
             </div>
             <div className="navbar-center hidden lg:flex">
-                <ul className="navbarLink gap-16 menu-horizontal px-1">
-                    <li>
+                <ul
+                    className={
+                        toggle
+                            ? "navbarLink gap-16 menu-horizontal px-1 text-white"
+                            : "navbarLink gap-16 menu-horizontal px-1"
+                    }
+                >
+                    <li className="home">
                         <NavLink
                             onClick={defaultBtn}
                             to="/"
+                            style={
+                                toggle
+                                    ? {
+                                          color: "white",
+                                          textDecoration: "underline",
+                                      }
+                                    : { color: "black" }
+                            }
                             className="link-hover"
                         >
                             Home

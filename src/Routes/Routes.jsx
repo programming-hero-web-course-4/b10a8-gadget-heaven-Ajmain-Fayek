@@ -29,7 +29,67 @@ const routes = createBrowserRouter([
                         <Home />
                     </>
                 ),
-                loader: async () => await fetch("/LaptopData.json"),
+                loader: async () => await fetch("/Iphone.json"),
+            },
+            {
+                path: "/laptops",
+                element: (
+                    <>
+                        <SetTitle pagetitle="Laptops | Gadget Heaven" />
+                        <Home />
+                    </>
+                ),
+                loader: async () => await fetch("/Laptops.json"),
+            },
+            {
+                path: "/phones",
+                element: (
+                    <>
+                        <SetTitle pagetitle="Phones | Gadget Heaven" />
+                        <Home />
+                    </>
+                ),
+                loader: async () => await fetch("/Phones.json"),
+            },
+            {
+                path: "/accessories",
+                element: (
+                    <>
+                        <SetTitle pagetitle="Accessories | Gadget Heaven" />
+                        <Home />
+                    </>
+                ),
+                loader: async () => await fetch("/Accessories.json"),
+            },
+            {
+                path: "/iphone",
+                element: (
+                    <>
+                        <SetTitle pagetitle="Iphones | Gadget Heaven" />
+                        <Home />
+                    </>
+                ),
+                loader: async () => await fetch("/Iphone.json"),
+            },
+            {
+                path: "/smartwatches",
+                element: (
+                    <>
+                        <SetTitle pagetitle="Smart Watches | Gadget Heaven" />
+                        <Home />
+                    </>
+                ),
+                loader: async () => await fetch("/SmartWatches.json"),
+            },
+            {
+                path: "/macbook",
+                element: (
+                    <>
+                        <SetTitle pagetitle="MacBooks | Gadget Heaven" />
+                        <Home />
+                    </>
+                ),
+                loader: async () => await fetch("/MacBook.json"),
             },
             {
                 path: "/statistics",
@@ -51,12 +111,12 @@ const routes = createBrowserRouter([
                 children: [
                     {
                         path: "/dashboard",
-                        element: <Cart/>
+                        element: <Cart />,
                     },
                     {
                         path: "/dashboard/wishlist",
-                        element: <WishList/>
-                    }
+                        element: <WishList />,
+                    },
                 ],
             },
             {
