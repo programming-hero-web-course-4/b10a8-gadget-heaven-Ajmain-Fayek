@@ -8,7 +8,8 @@ import AddToCartContext from "../Context/AddToCartContext";
 const Navbar = () => {
     const { cartBtn, wishListBtn, defaultBtn, toggleCart, toggleWishlist } =
         useContext(CartWishContext);
-    const {cartNumber} = useContext(AddToCartContext)
+    
+    const { cartNumber, wishListNumber } = useContext(AddToCartContext);
 
     const location = useLocation();
 
@@ -150,6 +151,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="cartWishBtn gap-4">
+                {/* Cart */}
                 <div className="relative">
                     <NavLink
                         onClick={cartBtn}
@@ -162,8 +164,20 @@ const Navbar = () => {
                     >
                         <AddToCard_SVG />
                     </NavLink>
-                    <p>{cartNumber}</p>
+
+                    {/* Cart Number */}
+                    <p
+                        className={
+                            cartNumber == 0
+                                ? "hidden"
+                                : "absolute -top-1 -right-1 border bg-yellow-300 rounded-full px-1 font-semibold text-xs"
+                        }
+                    >
+                        {cartNumber}
+                    </p>
                 </div>
+
+                {/* Wish List */}
                 <div className="relative">
                     <NavLink
                         onClick={wishListBtn}
@@ -176,6 +190,16 @@ const Navbar = () => {
                     >
                         <WishList_SVG />
                     </NavLink>
+                    {/* Wishlist Number */}
+                    <p
+                        className={
+                            wishListNumber == 0
+                                ? "hidden"
+                                : "absolute -top-1 -right-1 border bg-yellow-300 rounded-full px-1 font-semibold text-xs"
+                        }
+                    >
+                        {wishListNumber}
+                    </p>
                 </div>
             </div>
         </div>

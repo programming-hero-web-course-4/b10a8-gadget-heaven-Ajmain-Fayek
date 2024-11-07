@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import ProductDetailsContext from "../Context/ProductDetailsContext";
 import Heading from "../Components/Heading";
 import AddToCard_SVG from "../Components/AddToCard_SVG";
@@ -8,9 +8,12 @@ import AddToCartContext from "../Context/AddToCartContext";
 
 const ProductDetails = () => {
     const { productDetails } = useContext(ProductDetailsContext);
-    const {handleCart} = useContext(AddToCartContext)
+    const { handleCart, handleWish } =
+        useContext(AddToCartContext);
+
 
     const {
+        product_id,
         product_image,
         product_title,
         price,
@@ -29,7 +32,10 @@ const ProductDetails = () => {
         edit: false,
     };
 
-
+    const wishDisabled = (productDetails) => {
+        handleWish(productDetails);
+        document.getElementById(product_id).classList = "btn btn-disabled btn-circle bg-white border-gray-300";
+    };
 
     return (
         <>
@@ -94,7 +100,11 @@ const ProductDetails = () => {
                         >
                             Add to Cart <AddToCard_SVG strokeColor="#ffffff" />
                         </button>
-                        <button className="btn btn-circle bg-white border-gray-300">
+                        <button
+                            id={product_id}
+                            onClick={() => wishDisabled(productDetails)}
+                            className="btn btn-circle bg-white border-gray-300"
+                        >
                             <WishList_SVG />
                         </button>
                     </div>
