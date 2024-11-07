@@ -11,7 +11,7 @@ const Heading = ({
             <p className={`font-bold text-2xl lg:text-4xl ${titleColor}`}>
                 {title}
             </p>
-            <p className={`text-sm md:text-base ${subtitleColor}`}>
+            <p className={`text-sm md:text-base max-w-screen-md mx-auto ${subtitleColor}`}>
                 {subtitle}
             </p>
         </div>

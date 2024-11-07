@@ -19,7 +19,7 @@ const Navbar = () => {
     }, [location]);
 
     return (
-        <div className="navbar gap-4 justify-between max-w-screen-2xl px-2 sm:px-6 md:px-10 lg:px-20 mx-auto">
+        <div className="navbar gap-4 justify-between max-w-screen-2xl px-2 sm:px-6 md:px-10 lg:px-20 mx-auto py-4">
             <div className="flex items-center">
                 <div className="dropdown">
                     <div

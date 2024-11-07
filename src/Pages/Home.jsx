@@ -22,8 +22,8 @@ const Home = () => {
             <div
                 className={
                     toggle
-                        ? "mx-auto max-w-screen-2xl bg-color-pirmary rounded-3xl border-4 border-white shadow-primary-shadow pt-20 pb-36 -mt-32"
-                        : "mx-auto max-w-screen-2xl bg-color-pirmary rounded-3xl border-4 border-white shadow-primary-shadow pt-14 pb-36 -mt-14"
+                        ? "mx-auto max-w-screen-2xl bg-color-pirmary rounded-3xl border-4 border-white shadow-primary-shadow pt-20 pb-36 -mt-20"
+                        : "mx-auto max-w-screen-2xl bg-color-pirmary rounded-3xl border-4 border-white shadow-primary-shadow pt-10 pb-36"
                 }
             >
                 <div className="max-w-screen-2xl mx-auto px-2 sm:px-6 md:px-10 lg:px-28 text-center space-y-6 lg:space-y-10 py-10">

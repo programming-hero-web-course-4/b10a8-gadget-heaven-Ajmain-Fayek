@@ -13,7 +13,7 @@ const MainLayout = () => {
                 <Navbar />
                 {/* Outlet */}
                 <ProductDetailsState>
-                    <div className="bg-gray-200 py-16">
+                    <div className="bg-gray-200 pt-2 pb-10">
                         <Outlet />
                     </div>
                 </ProductDetailsState>
