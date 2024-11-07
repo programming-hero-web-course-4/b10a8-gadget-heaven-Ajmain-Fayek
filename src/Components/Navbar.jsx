@@ -3,17 +3,19 @@ import WishList_SVG from "./WishList_SVG";
 import AddToCard_SVG from "./AddToCard_SVG";
 import { NavLink, Link, useLocation } from "react-router-dom";
 import CartWishContext from "../Context/ButtonsActiveStateContext";
+import AddToCartContext from "../Context/AddToCartContext";
 
 const Navbar = () => {
     const { cartBtn, wishListBtn, defaultBtn, toggleCart, toggleWishlist } =
         useContext(CartWishContext);
-    
-    const location = useLocation()
+    const {cartNumber} = useContext(AddToCartContext)
 
-    const [ toggle, setToggle ] = useState(true);
+    const location = useLocation();
+
+    const [toggle, setToggle] = useState(true);
 
     useEffect(() => {
-        if ((location.pathname == "/")) {
+        if (location.pathname == "/") {
             return setToggle(true);
         } else return setToggle(false);
     }, [location]);
@@ -87,11 +89,7 @@ const Navbar = () => {
                 <Link
                     onClick={defaultBtn}
                     to="/"
-                    style={
-                        toggle
-                            ? { color: "white" }
-                            : { color: "black" }
-                    }
+                    style={toggle ? { color: "white" } : { color: "black" }}
                     className="text-lg sm:text-xl lg:text-2xl font-bold cursor-pointer"
                 >
                     Gadget Heaven
@@ -152,28 +150,33 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="cartWishBtn gap-4">
-                <NavLink
-                    onClick={cartBtn}
-                    to="/dashboard"
-                    className={
-                        toggleCart
-                            ? "btn bg-color-pirmary btn-circle"
-                            : "btn bg-white btn-circle"
-                    }
-                >
-                    <AddToCard_SVG />
-                </NavLink>
-                <NavLink
-                    onClick={wishListBtn}
-                    to="/dashboard/wishlist"
-                    className={
-                        toggleWishlist
-                            ? "btn bg-color-pirmary btn-circle"
-                            : "btn bg-white btn-circle"
-                    }
-                >
-                    <WishList_SVG />
-                </NavLink>
+                <div className="relative">
+                    <NavLink
+                        onClick={cartBtn}
+                        to="/dashboard"
+                        className={
+                            toggleCart
+                                ? "btn bg-color-pirmary btn-circle"
+                                : "btn bg-white btn-circle"
+                        }
+                    >
+                        <AddToCard_SVG />
+                    </NavLink>
+                    <p>{cartNumber}</p>
+                </div>
+                <div className="relative">
+                    <NavLink
+                        onClick={wishListBtn}
+                        to="/dashboard/wishlist"
+                        className={
+                            toggleWishlist
+                                ? "btn bg-color-pirmary btn-circle"
+                                : "btn bg-white btn-circle"
+                        }
+                    >
+                        <WishList_SVG />
+                    </NavLink>
+                </div>
             </div>
         </div>
     );

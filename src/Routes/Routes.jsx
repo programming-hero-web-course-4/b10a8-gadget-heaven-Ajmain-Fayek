@@ -29,7 +29,7 @@ const routes = createBrowserRouter([
                         <Home />
                     </>
                 ),
-                loader: async () => await fetch("/Iphone.json"),
+                loader: async () => await fetch("/Laptops.json"),
             },
             {
                 path: "/laptops",

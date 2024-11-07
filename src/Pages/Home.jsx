@@ -22,7 +22,7 @@ const Home = () => {
             <div
                 className={
                     toggle
-                        ? "mx-auto max-w-screen-2xl bg-color-pirmary rounded-3xl border-4 border-white shadow-primary-shadow pt-20 pb-36 -mt-20"
+                        ? "mx-auto max-w-screen-2xl bg-color-pirmary rounded-3xl border-4 border-white shadow-primary-shadow pt-20 pb-36 -mt-[88px]"
                         : "mx-auto max-w-screen-2xl bg-color-pirmary rounded-3xl border-4 border-white shadow-primary-shadow pt-10 pb-36"
                 }
             >
@@ -49,7 +49,7 @@ const Home = () => {
             <div className="max-w-screen-2xl mx-auto px-2 sm:px-6 md:px-10 lg:px-28 -mt-32 mb-10">
                 <div className="lg:w-3/4 w-11/12 mx-auto border-2 border-white rounded-3xl p-4 lg:p-6 bg-gray-50/25">
                     <img
-                        className="w-full object-cover mx-auto rounded-2xl"
+                        className="w-full max-h-[500px] object-cover object-center mx-auto rounded-2xl"
                         src={Banner}
                         alt="Gadget Heaven Banner Image"
                     />

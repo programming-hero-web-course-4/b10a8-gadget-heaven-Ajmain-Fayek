@@ -4,11 +4,11 @@ import Heading from "../Components/Heading";
 import AddToCard_SVG from "../Components/AddToCard_SVG";
 import WishList_SVG from "../Components/WishList_SVG";
 import ReactStars from "react-rating-stars-component";
+import AddToCartContext from "../Context/AddToCartContext";
 
 const ProductDetails = () => {
     const { productDetails } = useContext(ProductDetailsContext);
-
-    console.log(productDetails);
+    const {handleCart} = useContext(AddToCartContext)
 
     const {
         product_image,
@@ -28,6 +28,8 @@ const ProductDetails = () => {
         isHalf: true,
         edit: false,
     };
+
+
 
     return (
         <>
@@ -75,10 +77,10 @@ const ProductDetails = () => {
 
                     {/* Ratting */}
                     <div className="space-y-1">
-                        <p className="font-semibold">Ratting</p>
+                        <p className="font-semibold">Rating ⭐</p>
                         <div className="flex items-center gap-2">
                             <ReactStars {...ratingStar} />
-                            <p className="bg-gray-200 py-1 px-2 rounded-full">
+                            <p className="bg-gray-200 py-1 px-4 rounded-full">
                                 {rating}
                             </p>
                         </div>
@@ -86,7 +88,10 @@ const ProductDetails = () => {
 
                     {/* Buttons Sections */}
                     <div className="flex items-center justify-start gap-2">
-                        <button className="flex items-center justify-center gap-1.5 text-white btn rounded-full bg-color-pirmary">
+                        <button
+                            onClick={() => handleCart(productDetails)}
+                            className="flex items-center justify-center gap-1.5 text-white btn rounded-full bg-color-pirmary"
+                        >
                             Add to Cart <AddToCard_SVG strokeColor="#ffffff" />
                         </button>
                         <button className="btn btn-circle bg-white border-gray-300">
