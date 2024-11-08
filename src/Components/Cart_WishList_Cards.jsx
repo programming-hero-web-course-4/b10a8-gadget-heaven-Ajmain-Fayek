@@ -35,6 +35,11 @@ const CartCards = ({ product }) => {
         }
     };
 
+    const addToCart = (product) => {
+        handleCart(product);
+        removeCard(product.product_id, product.price);
+    };
+
     const [toggle, setToggle] = useState(false);
 
     useEffect(() => {
@@ -60,7 +65,7 @@ const CartCards = ({ product }) => {
                     <p className="font-semibold">${price}</p>
                     <div className="flex items-center gap-2 justify-center sm:justify-start">
                         <button
-                            onClick={() => handleCart(product)}
+                            onClick={() => addToCart(product)}
                             className={
                                 toggle
                                     ? "text-white btn-sm sm:btn-md border-color-pirmary bg-color-pirmary btn rounded-full px-6"

@@ -22,7 +22,13 @@ const Cart = () => {
                         >
                             Sort by Price <Sort_SVG />
                         </button>
-                        <button className="btn-sm btn rounded-full bg-color-pirmary text-white border-color-pirmary">
+                        <button
+                            className={
+                                cartNumber == 0
+                                    ? "btn-disabled btn-sm btn rounded-full bg-color-pirmary text-white border-color-pirmary"
+                                    : "btn-sm btn rounded-full bg-color-pirmary text-white border-color-pirmary"
+                            }
+                        >
                             Purchase
                         </button>
                     </div>
