@@ -39,7 +39,7 @@ const Home = () => {
                     <Link
                         onClick={cartBtn}
                         to="/dashboard"
-                        className="btn rounded-full"
+                        className="btn rounded-full text-color-pirmary"
                     >
                         Shop Now
                     </Link>
