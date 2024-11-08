@@ -2,6 +2,19 @@ import AddToCartContext from "./AddToCartContext";
 import React, { useState } from "react";
 
 const AddToCartState = (props) => {
+    // Initial Cart Total Price Set
+    const totalCartPrice = () => {
+        if (localStorage.getItem("carts")) {
+            const number = JSON.parse(localStorage.getItem("carts"));
+            const totalPrice = number.map((product) => product.price);
+            const newV = totalPrice.join("+");
+            return eval(newV);
+        } else return 0;
+    };
+
+    // Cart Price Updatter
+    const [cartTotalPrice, setCartTotalPrice] = useState(totalCartPrice());
+
     // Initial Cart Counter
     const cartCount = () => {
         if (localStorage.getItem("carts")) {
@@ -31,12 +44,17 @@ const AddToCartState = (props) => {
                 (p) => p.product_id == product.product_id
             );
             if (exist) return alert("Product already in Cart");
-
             if (product.availability != "In Stock")
                 return alert("Product Out Of Stock");
 
             // If product does not exist then add to cart
             previusCart.push(product);
+
+            // Cart price Setter
+            const totalPrice = previusCart.map((product) => product.price);
+            const newV = totalPrice.join("+");
+            setCartTotalPrice(eval(newV));
+
             localStorage.setItem("carts", JSON.stringify(previusCart));
             // increase Cart Number
             setCartNumber(cartNumber + 1);
@@ -46,6 +64,8 @@ const AddToCartState = (props) => {
 
             localStorage.setItem("carts", JSON.stringify([product]));
             setCartNumber(cartNumber + 1);
+            // Cart price Setter
+            setCartTotalPrice(cartTotalPrice + product.price);
         }
     };
 
@@ -78,8 +98,12 @@ const AddToCartState = (props) => {
             value={{
                 handleCart,
                 handleWish,
+                setWishListNumber,
+                setCartNumber,
+                setCartTotalPrice,
                 cartNumber,
                 wishListNumber,
+                cartTotalPrice,
             }}
         >
             {props.children}
