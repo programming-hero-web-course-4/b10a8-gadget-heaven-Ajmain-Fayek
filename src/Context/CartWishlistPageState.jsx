@@ -1,8 +1,9 @@
 import CartWishlistPageContext from "./CartWishlistPageContext";
-
-import React, { useState } from "react";
+import AddToCartContext from "./AddToCartContext";
+import React, { useContext, useEffect, useState } from "react";
 
 const CartWishlistPageState = (props) => {
+    const { cartNumber } = useContext(AddToCartContext);
     // Get Initial wishlist
     const wishListProducts = () => {
         if (localStorage.getItem("wishList")) {
@@ -32,6 +33,13 @@ const CartWishlistPageState = (props) => {
 
     // Remove & update Cart
     const [cart, setCart] = useState(CartProducts());
+
+    useEffect(() => {
+        if (localStorage.getItem("carts")) {
+            const cart = JSON.parse(localStorage.getItem("carts"));
+            setCart(cart);
+        }
+    }, [cartNumber]);
 
     const removeCart = (PfromC) => {
         const cart = JSON.parse(localStorage.getItem("carts"));

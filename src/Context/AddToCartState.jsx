@@ -6,9 +6,11 @@ const AddToCartState = (props) => {
     const totalCartPrice = () => {
         if (localStorage.getItem("carts")) {
             const number = JSON.parse(localStorage.getItem("carts"));
-            const totalPrice = number.map((product) => product.price);
-            const newV = totalPrice.join("+");
-            return eval(newV);
+            const totalPrice = number.reduce(
+                (totalprice, product) => totalprice + product.price,
+                0
+            );
+            return totalPrice;
         } else return 0;
     };
 
@@ -50,17 +52,20 @@ const AddToCartState = (props) => {
             // If product does not exist then add to cart
             previusCart.push(product);
 
-            // Cart price Setter
-            const totalPrice = previusCart.map((product) => product.price);
-            const newV = totalPrice.join("+");
-            setCartTotalPrice(eval(newV));
+            // Cart price Setter / Count Total Price Using eval() method
+            const totalPrice = previusCart.reduce(
+                (totalprice, product) => totalprice + product.price,
+                0
+            );
+
+            setCartTotalPrice(totalPrice);
 
             localStorage.setItem("carts", JSON.stringify(previusCart));
             // increase Cart Number
             setCartNumber(cartNumber + 1);
         } else {
-            if (product.availability != "In Stock")
-                return alert("Product Out Of Stock");
+            if (product.availability != "In Stock"){
+                return alert("Product Out Of Stock");}
 
             localStorage.setItem("carts", JSON.stringify([product]));
             setCartNumber(cartNumber + 1);
