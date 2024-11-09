@@ -23,21 +23,23 @@ const CartCards = ({ product }) => {
         product;
 
     // Remove Card from Cart/Wishlist
-    const removeCard = (product_id, price) => {
+    const removeCard = (product) => {
         if (location.pathname == "/dashboard/wishlist") {
             setWishListNumber(wishListNumber - 1);
-            return removeWish(product_id);
+            return removeWish(product.product_id);
         }
         if (location.pathname == "/dashboard") {
             setCartNumber(cartNumber - 1);
-            setCartTotalPrice(cartTotalPrice - price);
-            return removeCart(product_id);
+            setCartTotalPrice(cartTotalPrice - product.price);
+            return removeCart(product.product_id);
         }
     };
 
     const addToCart = (product) => {
         handleCart(product);
-        removeCard(product.product_id, product.price);
+        //check stock
+        if (product.availability != "In Stock") return;
+        removeCard(product);
     };
 
     const [toggle, setToggle] = useState(false);
@@ -75,7 +77,7 @@ const CartCards = ({ product }) => {
                             Add to Cart <AddToCard_SVG strokeColor="#ffffff" />
                         </button>
                         <button
-                            onClick={() => removeCard(product_id, price)}
+                            onClick={() => removeCard(product)}
                             className="btn sm:hidden bg-red-100 btn-sm hover:bg-transparent border-red-500 text-[red] rounded-full shadow-none"
                         >
                             <Delete_SVG /> Remove
@@ -84,7 +86,7 @@ const CartCards = ({ product }) => {
                 </div>
             </div>
             <button
-                onClick={() => removeCard(product_id, price)}
+                onClick={() => removeCard(product)}
                 className="btn hidden sm:block btn-circle bg-transparent btn-sm hover:bg-transparent border-none shadow-none"
             >
                 <Delete_SVG />
