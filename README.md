@@ -45,6 +45,8 @@ Welcome to **Gadget Haven** your ultimate hub for the latest and greatest in tec
   - Tailwindcss
   - DaisyUi
 
+- 404 Page
+
 ### Key Features
 
 -   Dynamic Category
