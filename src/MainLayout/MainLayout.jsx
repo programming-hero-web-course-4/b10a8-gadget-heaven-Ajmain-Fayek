@@ -8,6 +8,7 @@ import AddToCartState from "../Context/AddToCartState";
 import PurchaseModal from "../Modal/PurchaseModal";
 import ModalState from "../Context/ModalState";
 import CartWishlistPageState from "../Context/CartWishlistPageState";
+import { Bounce, ToastContainer } from "react-toastify";
 
 const MainLayout = () => {
     return (
@@ -15,10 +16,10 @@ const MainLayout = () => {
             <AddToCartState>
                 <CartWishlistPageState>
                     <ModalState>
+                        <PurchaseModal />
                         <div>
                             {/* Navbar */}
                             <Navbar />
-                            <PurchaseModal />
 
                             {/* Outlet */}
                             <ProductDetailsState>

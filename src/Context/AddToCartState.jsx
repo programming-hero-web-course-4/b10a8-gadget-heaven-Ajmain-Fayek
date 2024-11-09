@@ -1,5 +1,5 @@
 import AddToCartContext from "./AddToCartContext";
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 
 const AddToCartState = (props) => {
     // Initial Cart Total Price Set
@@ -64,8 +64,9 @@ const AddToCartState = (props) => {
             // increase Cart Number
             setCartNumber(cartNumber + 1);
         } else {
-            if (product.availability != "In Stock"){
-                return alert("Product Out Of Stock");}
+            if (product.availability != "In Stock") {
+                return alert("Product Out Of Stock");
+            }
 
             localStorage.setItem("carts", JSON.stringify([product]));
             setCartNumber(cartNumber + 1);
@@ -75,6 +76,17 @@ const AddToCartState = (props) => {
     };
 
     // Handle Wish Button
+    // Get Initial wishlist
+    const wishListProducts = () => {
+        if (localStorage.getItem("wishList")) {
+            const wishlist = JSON.parse(localStorage.getItem("wishList"));
+            return wishlist;
+        }
+    };
+
+    // Remove & Update Wishlist
+    const [wishList, setWishlist] = useState(wishListProducts());
+
     const handleWish = (product) => {
         if (localStorage.getItem("wishList")) {
             const previusWishList = JSON.parse(
@@ -89,12 +101,14 @@ const AddToCartState = (props) => {
 
             // If product does not exist then add to cart
             previusWishList.push(product);
+            setWishlist(previusWishList);
             localStorage.setItem("wishList", JSON.stringify(previusWishList));
             // increase Cart Number
             setWishListNumber(wishListNumber + 1);
         } else {
             localStorage.setItem("wishList", JSON.stringify([product]));
             setWishListNumber(wishListNumber + 1);
+            setWishlist([product]);
         }
     };
 
@@ -106,6 +120,8 @@ const AddToCartState = (props) => {
                 setWishListNumber,
                 setCartNumber,
                 setCartTotalPrice,
+                setWishlist,
+                wishList,
                 cartNumber,
                 wishListNumber,
                 cartTotalPrice,

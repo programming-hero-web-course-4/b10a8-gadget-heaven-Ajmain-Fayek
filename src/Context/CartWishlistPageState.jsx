@@ -5,18 +5,8 @@ import { useNavigate } from "react-router-dom";
 import CartWishContext from "./ButtonsActiveStateContext";
 
 const CartWishlistPageState = (props) => {
-    const { cartNumber, setCartTotalPrice, setCartNumber } =
+    const { cartNumber, wishList, setWishlist, setCartTotalPrice, setCartNumber } =
         useContext(AddToCartContext);
-    // Get Initial wishlist
-    const wishListProducts = () => {
-        if (localStorage.getItem("wishList")) {
-            const wishlist = JSON.parse(localStorage.getItem("wishList"));
-            return wishlist;
-        }
-    };
-
-    // Remove & Update Wishlist
-    const [wishList, setWishlist] = useState(wishListProducts());
 
     const removeWish = (PfromW) => {
         const wish = JSON.parse(localStorage.getItem("wishList"));
@@ -79,6 +69,7 @@ const CartWishlistPageState = (props) => {
                 removeCart,
                 sortCart,
                 handlePurchase,
+                setWishlist,
                 wishList,
                 cart,
             }}
