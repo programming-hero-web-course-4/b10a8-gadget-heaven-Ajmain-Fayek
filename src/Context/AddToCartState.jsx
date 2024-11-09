@@ -1,5 +1,6 @@
 import AddToCartContext from "./AddToCartContext";
-import React, { useContext, useState } from "react";
+import React, { useState } from "react";
+import SuccesToast from "../Toast/SuccesToast";
 
 const AddToCartState = (props) => {
     // Initial Cart Total Price Set
@@ -61,6 +62,10 @@ const AddToCartState = (props) => {
             setCartTotalPrice(totalPrice);
 
             localStorage.setItem("carts", JSON.stringify(previusCart));
+
+            // Show Success Tost
+            SuccesToast("Item Added to Cart");
+
             // increase Cart Number
             setCartNumber(cartNumber + 1);
         } else {
@@ -69,6 +74,10 @@ const AddToCartState = (props) => {
             }
 
             localStorage.setItem("carts", JSON.stringify([product]));
+
+            // Show Success Tost
+            SuccesToast("Item Added to Cart");
+
             setCartNumber(cartNumber + 1);
             // Cart price Setter
             setCartTotalPrice(cartTotalPrice + product.price);
@@ -103,10 +112,17 @@ const AddToCartState = (props) => {
             previusWishList.push(product);
             setWishlist(previusWishList);
             localStorage.setItem("wishList", JSON.stringify(previusWishList));
+
+            // Show Success Tost
+            SuccesToast("Item Wished");
+
             // increase Cart Number
             setWishListNumber(wishListNumber + 1);
         } else {
             localStorage.setItem("wishList", JSON.stringify([product]));
+            // Show Success Tost
+            SuccesToast("Item Wished");
+
             setWishListNumber(wishListNumber + 1);
             setWishlist([product]);
         }

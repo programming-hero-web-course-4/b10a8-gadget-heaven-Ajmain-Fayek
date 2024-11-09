@@ -8,9 +8,7 @@ import AddToCartContext from "../Context/AddToCartContext";
 
 const ProductDetails = () => {
     const { productDetails } = useContext(ProductDetailsContext);
-    const { handleCart, handleWish } =
-        useContext(AddToCartContext);
-
+    const { handleCart, handleWish } = useContext(AddToCartContext);
 
     const {
         product_id,
@@ -34,7 +32,8 @@ const ProductDetails = () => {
 
     const wishDisabled = (productDetails) => {
         handleWish(productDetails);
-        document.getElementById(product_id).classList = "btn btn-disabled btn-circle bg-white border-gray-300";
+        document.getElementById(product_id).classList =
+            "btn btn-disabled btn-circle bg-white border-gray-300";
     };
 
     return (
