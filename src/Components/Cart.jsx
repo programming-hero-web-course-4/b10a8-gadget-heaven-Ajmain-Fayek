@@ -3,10 +3,12 @@ import { Sort_SVG } from "./Sort_SVG";
 import CartWishlistPageContext from "../Context/CartWishlistPageContext";
 import AddToCartContext from "../Context/AddToCartContext";
 import Cart_WishList_Cards from "./Cart_WishList_Cards";
+import ModalContext from "../Context/ModalContext";
 
 const Cart = () => {
     const { cart, sortCart } = useContext(CartWishlistPageContext);
     const { cartNumber, cartTotalPrice } = useContext(AddToCartContext);
+    const { purchase } = useContext(ModalContext);
     return (
         <>
             <div className="max-w-screen-2xl mx-auto px-2 pt-10 pb-6 sm:px-6 md:px-10 lg:px-28 text-center">
@@ -23,6 +25,7 @@ const Cart = () => {
                             Sort by Price <Sort_SVG />
                         </button>
                         <button
+                            onClick={purchase}
                             className={
                                 cartNumber == 0
                                     ? "btn-disabled btn-sm btn rounded-full bg-color-pirmary text-white border-color-pirmary"

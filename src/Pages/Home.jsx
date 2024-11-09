@@ -14,7 +14,7 @@ const Home = () => {
         if (location.pathname == "/") return setToggle(true);
         else return setToggle(false);
     }, [location]);
-
+ 
     return (
         <div className="mx-auto">
             {/* Headings */}

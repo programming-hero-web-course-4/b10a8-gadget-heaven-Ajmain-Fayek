@@ -5,25 +5,33 @@ import { Outlet } from "react-router-dom";
 import CartWishState from "../Context/CartWishState";
 import ProductDetailsState from "../Context/ProductDetailsState";
 import AddToCartState from "../Context/AddToCartState";
+import PurchaseModal from "../Modal/PurchaseModal";
+import ModalState from "../Context/ModalState";
+import CartWishlistPageState from "../Context/CartWishlistPageState";
 
 const MainLayout = () => {
     return (
         <CartWishState>
             <AddToCartState>
-                <div>
-                    {/* Navbar */}
-                    <Navbar />
+                <CartWishlistPageState>
+                    <ModalState>
+                        <div>
+                            {/* Navbar */}
+                            <Navbar />
+                            <PurchaseModal />
 
-                    {/* Outlet */}
-                    <ProductDetailsState>
-                        <div className="bg-gray-200 pt-2 pb-10">
-                            <Outlet />
+                            {/* Outlet */}
+                            <ProductDetailsState>
+                                <div className="bg-gray-200 pt-2 pb-10">
+                                    <Outlet />
+                                </div>
+                            </ProductDetailsState>
+
+                            {/* Footer */}
+                            <Footer />
                         </div>
-                    </ProductDetailsState>
-
-                    {/* Footer */}
-                    <Footer />
-                </div>
+                    </ModalState>
+                </CartWishlistPageState>
             </AddToCartState>
         </CartWishState>
     );

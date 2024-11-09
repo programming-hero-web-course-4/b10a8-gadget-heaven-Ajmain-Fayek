@@ -1,9 +1,12 @@
 import CartWishlistPageContext from "./CartWishlistPageContext";
 import AddToCartContext from "./AddToCartContext";
 import React, { useContext, useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import CartWishContext from "./ButtonsActiveStateContext";
 
 const CartWishlistPageState = (props) => {
-    const { cartNumber } = useContext(AddToCartContext);
+    const { cartNumber, setCartTotalPrice, setCartNumber } =
+        useContext(AddToCartContext);
     // Get Initial wishlist
     const wishListProducts = () => {
         if (localStorage.getItem("wishList")) {
@@ -50,6 +53,18 @@ const CartWishlistPageState = (props) => {
         localStorage.setItem("carts", JSON.stringify(newCart));
     };
 
+    // Purchase Cart Handler Function
+    const {defaultBtn} = useContext(CartWishContext)
+    const navigate = useNavigate();
+    const handlePurchase = () => {
+        const cart = JSON.parse(localStorage.getItem("carts"));
+        setCartTotalPrice(0);
+        setCartNumber(0);
+        defaultBtn();
+        navigate("/");
+        if (cart) return localStorage.removeItem("carts");
+    };
+
     // Sort cart By Price <H-L>
     const sortCart = () => {
         const cart = JSON.parse(localStorage.getItem("carts"));
@@ -63,6 +78,7 @@ const CartWishlistPageState = (props) => {
                 removeWish,
                 removeCart,
                 sortCart,
+                handlePurchase,
                 wishList,
                 cart,
             }}

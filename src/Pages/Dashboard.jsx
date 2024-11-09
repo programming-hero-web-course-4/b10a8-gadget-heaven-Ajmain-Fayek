@@ -2,7 +2,6 @@ import React, { useContext, useState, useEffect } from "react";
 import { Outlet, NavLink, useLocation } from "react-router-dom";
 import CartWishContext from "../Context/ButtonsActiveStateContext";
 import Heading from "../Components/Heading";
-import CartWishlistPageState from "../Context/CartWishlistPageState";
 
 const Dashboard = () => {
     const { wishListBtn, cartBtn } = useContext(CartWishContext);
@@ -53,11 +52,9 @@ const Dashboard = () => {
                     </NavLink>
                 </div>
             </div>
-            <CartWishlistPageState>
-                <div className="text-center mx-auto">
-                    <Outlet />
-                </div>
-            </CartWishlistPageState>
+            <div className="text-center mx-auto">
+                <Outlet />
+            </div>
         </>
     );
 };
