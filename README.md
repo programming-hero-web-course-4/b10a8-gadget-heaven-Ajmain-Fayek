@@ -42,7 +42,7 @@ Welcome to **Gadget Haven** your ultimate hub for the latest and greatest in tec
 - Packages
   - React Toastify
   - Recharts
-  - Tailwind
+  - Tailwindcss
   - DaisyUi
 
 ### Key Features
