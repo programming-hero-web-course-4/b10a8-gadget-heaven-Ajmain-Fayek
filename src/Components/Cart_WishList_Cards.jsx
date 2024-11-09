@@ -4,6 +4,7 @@ import AddToCartContext from "../Context/AddToCartContext";
 import AddToCard_SVG from "./AddToCard_SVG";
 import { useLocation } from "react-router-dom";
 import CartWishlistPageContext from "../Context/CartWishlistPageContext";
+import ErrorToast from "../Toast/ErrorToast";
 
 const CartCards = ({ product }) => {
     const location = useLocation();
@@ -26,11 +27,13 @@ const CartCards = ({ product }) => {
     const removeCard = (product) => {
         if (location.pathname == "/dashboard/wishlist") {
             setWishListNumber(wishListNumber - 1);
+            ErrorToast("Wished item Removed");
             return removeWish(product.product_id);
         }
         if (location.pathname == "/dashboard") {
             setCartNumber(cartNumber - 1);
             setCartTotalPrice(cartTotalPrice - product.price);
+            ErrorToast("Cart item Removed");
             return removeCart(product.product_id);
         }
     };
