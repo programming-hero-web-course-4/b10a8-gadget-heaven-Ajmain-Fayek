@@ -39,6 +39,12 @@ Welcome to **Gadget Haven** your ultimate hub for the latest and greatest in tec
     -   reduce()
     -   map()
 
+- Packages
+  - React Toastify
+  - Recharts
+  - Tailwind
+  - DaisyUi
+
 ### Key Features
 
 -   Dynamic Category
